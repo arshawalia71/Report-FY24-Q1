@@ -191,10 +191,9 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 
 
 
-    columns_to_remove = ["Unnamed: 1", "Assignment: Resource: Resource Manager", "Resource: GDC Resource", 
+    columns_to_remove = ["Assignment: Resource: Resource Manager", 
                      "Project: Practice: Practice Name", "Project: Region: Region Name", "Budget: DR Number",
-                     "Budget: Budget Name", "Milestone ID", "Milestone Comments", "Planned Hours", 
-                     "Actual Hours Total"]
+                     "Budget: Budget Name", "Milestone ID", "Milestone Comments"]
 
     df = df.drop(columns=columns_to_remove)
 
