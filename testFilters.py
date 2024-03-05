@@ -23,41 +23,41 @@ def display_prompts_for_region(df):
 
     # Prompt 1
     with col1:
-        st.write("#### Top 5 use cases in the current quarter")
+        st.write("#### Milestones with maximum effort this quarter")
         st.write(top_use_cases(df))
 
     # Prompt 2
     with col2:
-        st.write("#### Top 5 projects where VR was done in the current quarter")
+        st.write("#### 	Projects with maximum VR effort this quarter")
         st.write(top_projects_for_VR_completed(df))
 
     # Prompt 3
     with col1:
-        st.write("#### Top 5 projects that were kicked off in the current quarter")
+        st.write("#### 	Projects with maximum Project Kickoff effort this quarter")
         st.write(top_projects_for_Kickoff_completed(df))
 
     # Prompt 4
     with col2:
-        st.write("#### Top 5 projects with high burn")
+        st.write("#### 	Projects with maximum effort this quarter (high burn)")
         st.write(top_projects_for_Highburn(df))
 
     # Prompt 5
     with col1:
-        st.write("#### Top 3 Vertical view")
+        st.write("#### 	Verticals with maximum effort this quarter	")
         st.write(top_verticals(df))
 
     # Prompt 6
     with col2:
-        st.write("#### Top 3 consultants with high billable effort")
+        st.write("#### 	Consultants with high billable effort")
         st.write(top_3_consultants_highBillableEffort(df))
 
     # Prompt 7
     with col1:
-        st.write("#### Top 3 Consultants with high Adhoc support hours")
+        st.write("#### Consultants with high Adhoc Support hours")
         st.write(top_3_consultants_highAdhocSupportHours(df))
 
     with col2:
-        st.write("#### Top 3 FWRs in the current Quarter")
+        st.write("#### FWRs with maximum effort this quarter")
         st.write(top_FWRs(df))
 
 def top_use_cases(df):
